@@ -8,7 +8,7 @@ export default function Gallery({ images }: GalleryProps) {
       style={{
         columnCount: 3,
         columnGap: '1rem',
-        maxWidth: '1200px',
+        maxWidth: '1400px',
         margin: '0 auto',
       }}
     >
@@ -21,7 +21,6 @@ export default function Gallery({ images }: GalleryProps) {
             width: '100%',
             marginBottom: '1rem',
             breakInside: 'avoid',
-            borderRadius: '8px',
           }}
         />
       ))}
