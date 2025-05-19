@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Gallery from '../components/Gallery'
 
 const imageCount = 20 // change this to match your image count
-const images = Array.from({ length: imageCount }, (_, i) => `/images/Foto (${i + 1}).jpg`)
+const images = Array.from({ length: imageCount }, (_, i) => `/images/foto (${i + 1}).jpg`)
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
