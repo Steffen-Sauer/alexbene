@@ -4,26 +4,31 @@ interface GalleryProps {
 
 export default function Gallery({ images }: GalleryProps) {
   return (
-    <div
-      style={{
-        columnCount: 3,
-        columnGap: '1rem',
-        maxWidth: '1400px',
-        margin: '0 auto',
-      }}
-    >
-      {images.map((src, i) => (
+    <div style={masonryStyles}>
+      {images.map((src, index) => (
         <img
-          key={i}
+          key={index}
           src={src}
-          alt={`Image ${i}`}
-          style={{
-            width: '100%',
-            marginBottom: '1rem',
-            breakInside: 'avoid',
-          }}
+          alt={`Gallery image ${index + 1}`}
+          loading="lazy"
+          style={imageStyles}
         />
       ))}
     </div>
   );
 }
+
+// Masonry container styles
+const masonryStyles: React.CSSProperties = {
+  columnCount: 3,
+  columnGap: '16px',
+  padding: '1rem',
+};
+
+// Image styles for proper spacing and scaling
+const imageStyles: React.CSSProperties = {
+  width: '100%',
+  marginBottom: '16px',
+  borderRadius: '8px',
+  display: 'block',
+};

@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f7f7;
+  --foreground: #f7f7f7;
 }
 
 @theme inline {
@@ -16,6 +16,19 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+}
+
+/* styles/globals.css or inside <style jsx global> */
+@media (max-width: 1024px) {
+  div[style*="column-count"] {
+    column-count: 2 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  div[style*="column-count"] {
+    column-count: 1 !important;
   }
 }
 
