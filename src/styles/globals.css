@@ -19,17 +19,35 @@
   }
 }
 
-/* styles/globals.css or inside <style jsx global> */
-@media (max-width: 1024px) {
-  div[style*="column-count"] {
-    column-count: 2 !important;
+.masonry {
+  column-count: 1;
+  column-gap: 16px;
+  padding: 1rem;
+}
+
+@media (min-width: 600px) {
+  .masonry {
+    column-count: 2;
   }
 }
 
-@media (max-width: 640px) {
-  div[style*="column-count"] {
-    column-count: 1 !important;
+@media (min-width: 900px) {
+  .masonry {
+    column-count: 3;
   }
+}
+
+@media (min-width: 1200px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+
+img {
+  width: 100%;
+  break-inside: avoid;
+  margin-bottom: 16px;
+  border-radius: 8px;
 }
 
 body {
