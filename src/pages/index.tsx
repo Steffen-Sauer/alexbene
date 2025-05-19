@@ -1,5 +1,3 @@
-import Gallery from '../components/Gallery';
-
 
 const imageCount = 20;
 const images = Array.from({ length: imageCount }, (_, i) => `/images/foto-${i + 1}.jpg`);
@@ -9,7 +7,7 @@ export default function Home() {
   return (
     <main style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
       <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>Hochzeit 2025 – Alex & Bene</h1>
-      <Gallery images={images} />
+      <img src="/images/foto-1.jpg" alt="Test" style={{ maxWidth: '100%' }} />
     </main>
   );
 }
