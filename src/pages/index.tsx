@@ -22,7 +22,8 @@ export default function Home() {
     
        <main style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
         <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>Hochzeit 2025 – Alex & Bene</h1>
-        <Gallery images={images} />
+        <img src="/images/foto-1.jpg" alt="Test" style={{ maxWidth: '100%' }} />
+        
       </main>
       
   );
