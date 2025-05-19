@@ -2,7 +2,7 @@
 import Gallery from '../components/Gallery';
 
 
-const imageCount = 20;
+const imageCount = 100;
 const images = Array.from({ length: imageCount }, (_, i) => `/images/foto-${i + 1}.jpg`);
 
 
