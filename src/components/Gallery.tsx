@@ -21,6 +21,7 @@ export default function Gallery({ images }: GalleryProps) {
             width: '100%',
             marginBottom: '1rem',
             breakInside: 'avoid',
+            borderRadius: '8px',
           }}
         />
       ))}
