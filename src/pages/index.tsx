@@ -9,7 +9,7 @@ const images = Array.from({ length: imageCount }, (_, i) => `/images/foto-${i + 
 export default function Home() {
   return (
     <main style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-      <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>Hochzeit 2025 – Alex & Bene</h1>
+      <h1 style={{ textAlign: 'center', marginBottom: '2rem', fontSize: "14px" }}>Hochzeit 2025 – Alex & Bene</h1>
       <Gallery images={images} />
     </main>
   );
